@@ -1,66 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Profile Card</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    
+    <style>
         
-        <style>
-            
-            body {
-    background: #f0f0f0;
-    font-family: Arial;
-    text-align: center;
-    padding-top: 50px;
-  }
-
-  .card {
-    background: white;
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px gray;
-    margin: auto;
-  }
-
-  button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    background: blue;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-
-  input {
-    padding: 8px;
-    width: 90%;
-    margin-top: 10px;
-  }
-        </style>
-    </head>
-    <body>
-        <div class="card">
-           
-            <h2 id="myname">your name</h2>
-            <input id="nameInput" placeholder="Type your name">
-            <button onclick="changeName()">update name</button>
-            <p id="message">Welcome to my profile.</p>
-            <button onclick="changeMessage()">change message</button>
-       
-        </div>
+        body {
+            font-family: Arial;
+            background: #f0f8ff;
+            padding: 20px;
+        }
         
-        <script>
-            function changeName() {
-                let name = document.getElementById("nameInput").value;
-                
-                document.getElementById("myname").innerText = name;
-            }
-            
-            function changeMessage() {
-                document.getElementById("message").innerText = "I am learning full stack development!"
-            }
-            
-            
-        </script>
-    </body>
+        h1 {
+            color: #2c3e50;
+        }
+        
+        h2 {
+            color: #0066cc;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    
+    <h1>Sangeetha Karunakaran</h1>
+    <p>Beginner Full Statck Developer</p>
+    
+    <h2>About me</h2>
+    <p>Hello, I am sangeetha. I am learing full stack development using HTML, CSS, Javascript. I want to became full stack developer.</p>
+    
+    <h2>My projects</h2>
+    <ul>
+        <li>Project 1 - Color Change App</li>
+        <li>Project 2 - Counter App</li>
+        <li>Project 3 - Calculator</li>
+    </ul>
+    
+    
+</body>
 </html>
